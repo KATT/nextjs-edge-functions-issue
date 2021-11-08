@@ -69,6 +69,7 @@ export default function CountryPage({ country, locale, dictionary }: Props) {
                 onClick={() => {
                   router.push({
                     query: {
+                      ...router.query,
                       foo: "bar",
                     },
                   });
@@ -84,6 +85,7 @@ export default function CountryPage({ country, locale, dictionary }: Props) {
               <Link
                 href={{
                   query: {
+                    ...router.query,
                     key: "value",
                   },
                 }}
